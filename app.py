@@ -1,15 +1,15 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS  # 导入 CORS
-from ddddocr import DdddOcr
+   #  -*-coding:utf8 -*-
+
 import base64
 from io import BytesIO
 from PIL import Image
+from ddddocr import DdddOcr
+from flask import Flask, request, jsonify
+from flask_cors import CORS  # 导入 CORS
 
 app = Flask(__name__)
-
 # 启用 CORS 支持，允许所有源进行跨域请求
 CORS(app)
-
 ocr = DdddOcr()
 
 
@@ -32,7 +32,6 @@ def recognize_captcha():
 
         # 返回识别的结果
         return jsonify({'code': result})
-
     except Exception as e:
         return jsonify({'error': str(e)}), 400
 
