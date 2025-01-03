@@ -5,9 +5,9 @@
 // @description  根据XPath自动填充
 // @author       ydd
 // @require      https://cdn.jsdelivr.net/jquery/1.7.2/jquery.min.js
-// @match        http://10.64.16.115:58080/*
-// @match        https://login.gientech.com/*
-// @match        http://10.64.17.87:9101/*
+// @match        http://x/*
+// @match        https://y/*
+// @match        http://z/*
 // @run-at       document-end
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
